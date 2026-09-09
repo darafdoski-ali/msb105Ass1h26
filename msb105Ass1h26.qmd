@@ -22,28 +22,33 @@ abstract: "Et kort sammendrag, en til to avsnitt."
 
 ## Introduksjon
 
-Hva handler artikkelen om?
-Hva blir diskutert?
-Hvorfor er dette viktig?
+Denne artikkelen tar for seg begrepet reproduserbarhet i vitenskapelig forskning, og hvorfor det har blitt et sentralt tema de siste tiårene.
+
+[@mcnutt2014] påpeker at vitenskap bygger på et fundament tillit, og at gjenskaping av forsøk er en av de vikgitste måtene forskere kan opparbeide seg tillit til egne konkluajsoner,
+
+samtidig har flere fagfelt, særlig psykologi, opplevd det som gjerne kalles en "replikasjonskrise"
+
+[@ioannidis2005 ; @simmons2011], noe som har sett spørmål ved hvor pålitlig publisert forkning egentlig er.
+
+Artikkelen diskuterer forkjelen mellom repoduserbarhet, replikerbarhet og generaliserbarhet, ser på årsaker til at fornungsresultater ofte ikke lar gjenskape, og vurdere omnyere verktøy sim Quarto - dokumenter kan bidra til å løse noen av disse utfordringene.
+
+Temaet er vikttig fordi rovust og pålitelig forskning er selve grunnlaget for at vitenskapelig kan bygges videre på [@bollen2015]. [@goodman2016] skiller videre mellom tre typer reprodusertbarhet: resultatreproduserbarhet og robusthet/generaliserbarhet, og understreker at disse begrepene ofte brukes om hverandre i litteraturen på en måte som skaper forvirring.
+
+En sentral
 
 ## Litteraturgjennomgang
 
-Smarte synspunkt om emnet fra andre.
+Reproduserbarhet regnes ofte som en nødvendig, men ikke tilstrekkelig, betingelse for replikerbarhet [@jasny2011] , men reprdouserbarhet handler om å kunne gjenskape resultater med samme data og samme prosedyrer, krever replikerbarhet at man samler inn nye data og likevek finner samme konkulsjon [@bollen2015].
 
-Bruk minst 20 siteringer. Minst 5 må være nye relevante artikler om emnet som du har funnet selv.
+En sentral årsak til manglende reproduserbarhet er publiseringsbias.
 
-Benytt begge siteringsmåter,  dvs. «in-line» og på slutten av setningen. Prøv å variere siteringsteknikk for å få flyt i språket.
-
-Example:
-
-@gentleman2003 hevder at bla bla bla.
-Andre mener imidlertid bla bla [@goodman2016b; @ioannidis2005b].
+Fordi tidsskrifter i stor gard foretrekker positive og signifikante funn, havner studier uten effekt sjelden i litteraturen, som et fenomen [@rosenthal1979] omtaler som "the file drawer problem". [@young2008] argumenter for at dette kan forstås som en økonomisk logikk: vitenskaåelig informasjon behandles som en vare, der signifikante resulatater. har høyere "markedsverdi" enn nullresultater, noe som forsterker skjevheten i hva som er faktisk publiseres.
 
 ## Diskusjon av forskningsspørsmålet (problemstillingen)
 
--   Burde replikerbarhet være et krav eller er det å be om for mye?
--   Kan Quarto dokumenter hjelpe med å oppnå reproduserbarhet?
--   Hvilke problem gjenstår og hvordan kan disse løses?
+- Burde replikerbarhet være et krav eller er det å be om for mye?
+- Kan Quarto dokumenter hjelpe med å oppnå reproduserbarhet?
+- Hvilke problem gjenstår og hvordan kan disse løses?
 
 ## Konklusjon
 
@@ -56,8 +61,8 @@ Noen kloke ord.
 
 ## Appendiks A
 
--   Versjon nummer og referanse til R pakken brukt i dokumentet
--   R versjon brukt, med referanse
+- Versjon nummer og referanse til R pakken brukt i dokumentet
+- R versjon brukt, med referanse
 
 ## Appendiks B
 
