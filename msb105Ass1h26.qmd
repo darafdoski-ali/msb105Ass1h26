@@ -16,11 +16,13 @@ format:
 # krever at tinytex er installert
 #  pdf:
 #    papersize: a4
-bibliography: reproducibility.bib
+bibliography: [reproducibility.bib, myRefs.bib]
 abstract: "Et kort sammendrag, en til to avsnitt."
 ---
 
 ## Litteraturgjennomgang
+
+@R og @tidyverse er kjempegøy.
 
 Reproduserbarhet regnes ofte som en nødvendig, men ikke tilstrekkelig, betingelse for replikerbarhet [@jasny2011] , men reprdouserbarhet handler om å kunne gjenskape resultater med samme data og samme prosedyrer, krever replikerbarhet at man samler inn nye data og likevek finner samme konkulsjon [@bollen2015].
 En sentral årsak til manglende reproduserbarhet er publiseringsbias.
