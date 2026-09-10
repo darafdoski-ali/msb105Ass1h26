@@ -1,23 +1,7 @@
 ---
-title: "Er reproduserbarhet nok?"
-author: "Author Name"
-date: last-modified
-date-format: "dddd D MMM, YYYY"
-csl: apa7.csl
-# nynorsk
-lang: no-NN
-#lang: no-NB
-# for typst with bibtex
-citeproc: true
-papersize: a4
-format:
-  html: default
-  typst: default
-# krever at tinytex er installert
-#  pdf:
-#    papersize: a4
-bibliography: reproducibility.bib
-abstract: "Et kort sammendrag, en til to avsnitt."
+title: "tmp"
+format: html
+editor: visual
 ---
 
 ## Litteraturgjennomgang
@@ -45,19 +29,3 @@ Diskusjon
 Konklusjon
 Reproduserbarhet er en nødvendig, men ikke tilstrekkelig, forutsetning for robust og pålitelig vitenskap
 Verktøy som Quarto senker terskelen for metodereproduserbarhet betraktelig, men løser verken publiseringsbias [@young2008], mangelen på insentiver for å faktisk dele data og kode åpent [@mccullough2008],m ellers nyere utfordinger knyttet til datatilgjengelighet.
-
-
-## Referanser
-
-::: {#refs}
-:::
-
-## Appendiks A
-
-- Versjon nummer og referanse til R pakken brukt i dokumentet
-- R versjon brukt, med referanse
-
-## Appendiks B
-
-- Hvordan er KI brukt
-- Husk invitasjon til chat
