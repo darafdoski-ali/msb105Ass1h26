@@ -22,6 +22,8 @@ abstract: "Et kort sammendrag, en til to avsnitt."
 
 ## Litteraturgjennomgang 
 
+Litt tekst lagt tyil i gren.
+
 Reproduserbarhet regnes ofte som en nødvendig, men ikke tilstrekkelig, betingelse for replikerbarhet [@jasny2011] , men reprdouserbarhet handler om å kunne gjenskape resultater med samme data og samme prosedyrer, krever replikerbarhet at man samler inn nye data og likevek finner samme konkulsjon [@bollen2015].
 En sentral årsak til manglende reproduserbarhet er publiseringsbias.
 Fordi tidsskrifter i stor gard foretrekker positive og signifikante funn, havner studier uten effekt sjelden i litteraturen, som et fenomen [@rosenthal1979] omtaler som "the file drawer problem". [@young2008] argumenter for at dette kan forstås som en økonomisk logikk: vitenskaåelig informasjon behandles som en vare, der signifikante resulatater. har høyere "markedsverdi" enn nullresultater, noe som forsterker skjevheten i hva som er faktisk publiseres.
