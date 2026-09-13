@@ -1,8 +1,8 @@
 ---
 title: "Er reproduserbarhet nok?"
-author: "Author Name"
+author: "Daraf"
 date: last-modified
-date-format: "dddd D MMM, YYYY"
+date-format: "15.09.2026"
 csl: apa7.csl
 # nynorsk
 lang: no-NN
@@ -24,7 +24,7 @@ abstract: "Et kort sammendrag, en til to avsnitt."
 
 Denne artikkelen tar for seg begrepet reproduserbarhet i vitenskapelig forskning, og hvorfor det har blitt et sentralt tema de siste tiårene. [@mcnutt2014] påpeker at vitenskap bygger på et fundament av tillit, og at gjenskaping av forsøk er en av de viktigste måtene forskere kan opparbeide seg tillit til egne konklusjoner. Samtidig har flere fagfelt, særlig psykologi, opplevd det som gjerne kalles en "replikasjonskrise" [@ioannidis2005]; [@simmons2011], noe som har satt spørsmål ved hvor pålitelig publisert forskning egentlig er.
 
-Artikkelen diskuterer forskjellen mellom reproduserbarhet, replikerbarhet og generaliserbarhet, ser på årsaker til at forskningsresultater ofte ikke lar seg gjenskape, og vurderer om nyere verktøy som Quarto-dokumenter kan bidra til å løse noen av disse utfordringene. Temaet er viktig fordi robust og pålitelig forskning er selve grunnlaget for at vitenskapelig kunnskap kan bygges videre på \[@bollen2015\].
+Artikkelen diskuterer forskjellen mellom reproduserbarhet, replikerbarhet og generaliserbarhet, ser på årsaker til at forskningsresultater ofte ikke lar seg gjenskape, og vurderer om nyere verktøy som Quarto-dokumenter kan bidra til å løse noen av disse utfordringene. Temaet er viktig fordi robust og pålitelig forskning er selve grunnlaget for at vitenskapelig kunnskap kan bygges videre på [@bollen2015].
 
 ## Litterturgjennomgang
 
@@ -58,7 +58,7 @@ Selv med dynamiske dokumenter gjenstår utfordringer knyttet til pakkeversjoner 
 
 ## Konkulasjon
 
-Reproduserbarhet er en nødvendig, men ikke tilstrekkelig, forutsetning for robust og pålitelig vitenskap \[@bollen2015\]. Verktøy som Quarto senker terskelen for metodereproduserbarhet betraktelig, men løser verken publiseringsbias [@young2008], mangelen på insentiver for å faktisk dele data og kode åpent [@mccullough2008], eller nyere utfordringer knyttet til datatilgjengelighet [@schoch2024]. Skal replikasjonskrisen møtes for alvor, kreves trolig en kombinasjon av bedre verktøy, endrede publiseringsnormer og en forskningskultur som verdsetter åpenhet like høyt som nye, positive funn.
+Reproduserbarhet er en nødvendig, men ikke tilstrekkelig, forutsetning for robust og pålitelig vitenskap [@bollen2015]. Verktøy som Quarto senker terskelen for metodereproduserbarhet betraktelig, men løser verken publiseringsbias [@young2008], mangelen på insentiver for å faktisk dele data og kode åpent [@mccullough2008], eller nyere utfordringer knyttet til datatilgjengelighet [@schoch2024]. Skal replikasjonskrisen møtes for alvor, kreves trolig en kombinasjon av bedre verktøy, endrede publiseringsnormer og en forskningskultur som verdsetter åpenhet like høyt som nye, positive funn.
 
 ## Referanser
 
