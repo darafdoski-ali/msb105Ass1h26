@@ -20,8 +20,6 @@ bibliography: [reproducibility.bib, myRefs.bib]
 abstract: "Et kort sammendrag, en til to avsnitt."
 ---
 
-nå har jeg fiksert på introen
-
 ## Introdusjon
 
 Denne artikkelen tar for seg begrepet reproduserbarhet i vitenskapelig forskning, og hvorfor det har blitt et sentralt tema de siste tiårene. [@mcnutt2014] påpeker at vitenskap bygger på et fundament av tillit, og at gjenskaping av forsøk er en av de viktigste måtene forskere kan opparbeide seg tillit til egne konklusjoner. Samtidig har flere fagfelt, særlig psykologi, opplevd det som gjerne kalles en "replikasjonskrise" [@ioannidis2005]; [@simmons2011], noe som har satt spørsmål ved hvor pålitelig publisert forskning egentlig er.
@@ -46,7 +44,7 @@ Slike dynamiske dokumenter gjør det mulig å koble tekst og kode direkte sammen
 
 ## Diskuasjon
 
-\*\*Burde replikerbarhet være et krav for publisering, eller er det å be om for mye?\*\*
+\*Burde replikerbarhet være et krav for publisering, eller er det å be om for mye?\*
 
 Argumentet for et krav er at reproduserbarhet er en nødvendig, om enn ikke tilstrekkelig, forutsetning for replikerbarhet [@peng2011]. Samtidig peker [@pethick2025] på at vi mangler solid empirisk dokumentasjon for hvor stort problemet egentlig er, noe som gjør det vanskeligere å begrunne strenge krav uten først å forstå omfanget bedre. Full replikasjon, ny datainnsamling og uavhengig etterprøving, som er dessuten ofte kostbart og tidkrevende, og vanskelig å kreve av alle publiserte studier...
 
