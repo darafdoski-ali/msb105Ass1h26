@@ -20,11 +20,15 @@ bibliography: [reproducibility.bib, myRefs.bib]
 abstract: "Et kort sammendrag, en til to avsnitt."
 ---
 
+nå har jeg fiksert på introen
+
 ## Introdusjon
 
 Denne artikkelen tar for seg begrepet reproduserbarhet i vitenskapelig forskning, og hvorfor det har blitt et sentralt tema de siste tiårene. [@mcnutt2014] påpeker at vitenskap bygger på et fundament av tillit, og at gjenskaping av forsøk er en av de viktigste måtene forskere kan opparbeide seg tillit til egne konklusjoner. Samtidig har flere fagfelt, særlig psykologi, opplevd det som gjerne kalles en "replikasjonskrise" [@ioannidis2005]; [@simmons2011], noe som har satt spørsmål ved hvor pålitelig publisert forskning egentlig er.
 
-Artikkelen diskuterer forskjellen mellom reproduserbarhet, replikerbarhet og generaliserbarhet, ser på årsaker til at forskningsresultater ofte ikke lar seg gjenskape, og vurderer om nyere verktøy som Quarto-dokumenter kan bidra til å løse noen av disse utfordringene. Temaet er viktig fordi robust og pålitelig forskning er selve grunnlaget for at vitenskapelig kunnskap kan bygges videre på [@bollen2015].
+Artikkelen diskuterer forskjellen mellom reproduserbarhet, replikerbarhet og generaliserbarhet, ser på årsaker til at forskningsresultater ofte ikke lar seg gjenskape, og vurderer om nyere verktøy som Quarto dokumenter kan bidra til å løse noen av disse utfordringene.
+
+Temaet er viktig fordi robust og pålitelig forskning er selve grunnlaget for at vitenskapelig kunnskap kan bygges videre på [@bollen2015].
 
 ## Litterturgjennomgang
 
