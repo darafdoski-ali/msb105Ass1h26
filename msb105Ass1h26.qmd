@@ -26,7 +26,7 @@ Denne artikkelen tar for seg begrepet reproduserbarhet i vitenskapelig forskning
 
 Artikkelen diskuterer forskjellen mellom reproduserbarhet, replikerbarhet og generaliserbarhet, ser på årsaker til at forskningsresultater ofte ikke lar seg gjenskape, og vurderer om nyere verktøy som Quarto dokumenter kan bidra til å løse noen av disse utfordringene.
 
-Temaet er viktig fordi robust og pålitelig forskning er selve grunnlaget for at vitenskapelig kunnskap kan bygges videre på [@bollen2015].
+Temaet er viktig fordi robust og pålitelig forskning er selve grunnlaget for at vitenskapelig kunnskap kan bygges videre på [@zotero-item-53]
 
 ## Litterturgjennomgang
 
@@ -71,7 +71,6 @@ Skal replikasjonskrisen møtes for alvor, kreves trolig en kombinasjon av bedre 
 
 ## Appendiks A
 
-
 Denne rapporten ble utarbeidet i R og Quarto ved bruk av følgende R-pakker: knitr [@xie2014] og rmarkdown.
 
 ```{r}
@@ -85,8 +84,7 @@ sessionInfo()
 
 I arbeidet med denne oppgaven har jeg brukt Chatgpt.com , som støtte i skriveprosessen min for å vudere teksten min om oppgaven jeg har fptt. KI-verktøyet er brukt til:
 
-- Har spurt om teksten min 
-- Har spurt om mine kilder 
+- Har spurt om teksten min
+- Har spurt om mine kilder
 
-Alle forslag fra KI-verktøyet er gjennomgått, tilpasset og kvalitetssikret
-av meg selv før de ble tatt inn i den endelige teksten.
+Alle forslag fra KI-verktøyet er gjennomgått, tilpasset og kvalitetssikret av meg selv før de ble tatt inn i den endelige teksten.
