@@ -2,17 +2,14 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="no-NN" xml:lang="no-NN"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Author Name">
+<meta name="author" content="Daraf">
 
 <title>Er reproduserbarhet nok?</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -50,14 +47,15 @@ div.csl-indent {
 <script src="msb105Ass1h26_files/libs/clipboard/clipboard.min.js"></script>
 <script src="msb105Ass1h26_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="msb105Ass1h26_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="msb105Ass1h26_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="msb105Ass1h26_files/libs/quarto-html/popper.min.js"></script>
 <script src="msb105Ass1h26_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="msb105Ass1h26_files/libs/quarto-html/anchor.min.js"></script>
 <link href="msb105Ass1h26_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="msb105Ass1h26_files/libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="msb105Ass1h26_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="msb105Ass1h26_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="msb105Ass1h26_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="msb105Ass1h26_files/libs/bootstrap/bootstrap-138a6193a3bd40baf1e627da441a4734.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="msb105Ass1h26_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
@@ -81,14 +79,14 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Author Name </p>
+             <p>Daraf </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Thursday 10 Sep, 2026</p>
+      <p class="date">15.09.2026</p>
     </div>
   </div>
   
@@ -98,7 +96,7 @@ div.csl-indent {
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    Et kort sammendrag, en til to avsnitt.
+    Teksten til Daraf
   </div>
 </div>
 
@@ -106,15 +104,53 @@ div.csl-indent {
 </header>
 
 
-<section id="litteraturgjennomgang" class="level2">
-<h2 class="anchored" data-anchor-id="litteraturgjennomgang">Litteraturgjennomgang</h2>
-<p>Reproduserbarhet regnes ofte som en nødvendig, men ikke tilstrekkelig, betingelse for replikerbarhet <span class="citation" data-cites="jasny2011">(<a href="#ref-jasny2011" role="doc-biblioref">Jasny et al., 2011</a>)</span> , men reprdouserbarhet handler om å kunne gjenskape resultater med samme data og samme prosedyrer, krever replikerbarhet at man samler inn nye data og likevek finner samme konkulsjon <span class="citation" data-cites="bollen2015">(<a href="#ref-bollen2015" role="doc-biblioref"><strong>bollen2015?</strong></a>)</span>. En sentral årsak til manglende reproduserbarhet er publiseringsbias. Fordi tidsskrifter i stor gard foretrekker positive og signifikante funn, havner studier uten effekt sjelden i litteraturen, som et fenomen <span class="citation" data-cites="rosenthal1979">(<a href="#ref-rosenthal1979" role="doc-biblioref">Rosenthal, 1979</a>)</span> omtaler som “the file drawer problem”. <span class="citation" data-cites="young2008">(<a href="#ref-young2008" role="doc-biblioref">Young et al., 2008</a>)</span> argumenter for at dette kan forstås som en økonomisk logikk: vitenskaåelig informasjon behandles som en vare, der signifikante resulatater. har høyere “markedsverdi” enn nullresultater, noe som forsterker skjevheten i hva som er faktisk publiseres. Dette henger tett sammen med problemet med type 1- feil: med et signifikansnivå på 0,05 vil man u gjennomsnitt signifkante funn publiseres, kan store deler av den publiserte litteraturen i verste fall bestå av falske postive funn <span class="citation" data-cites="simmons2011">(<a href="#ref-simmons2011" role="doc-biblioref">Simmons et al., 2011</a>)</span>. <span class="citation" data-cites="ioannidis2005">(<a href="#ref-ioannidis2005" role="doc-biblioref">Ioannidis, 2005</a>)</span> går så langt som å hevde at de fleste publiserte forkninngsfunn faktisk er falske. Flere store replikasjonsstudier har forsøk å tallfeste omfaget av problemet. Open Science Collaborastion forsøkte å replikere 100 studier fra tre ledende psykologitidsskrifter, og fant at kun 36 prosent av replikasjonene ga signifikante resulatater, mot 97 prosent i de orginale studiene <span class="citation" data-cites="nosek2015">(<a href="#ref-nosek2015" role="doc-biblioref">Nosek et al., 2015</a>)</span>. Lignende resultater kom frem i Many Lbas 2-prosjektet, der bare 54 prosnet av 28 replikerte funn viste en statistisk signifikant effekt i samme retning som originalstudien <span class="citation" data-cites="klein2018">(<a href="#ref-klein2018" role="doc-biblioref"><span class="nocase">Klein et al.</span>, 2018</a>)</span>. Problemet er heller ikke nytt eller begrenset til psykologi: allerde i 1982 forsøkte ” The journal of money, Credit and Banking” -prosjektet å etterprøve resulatater i økonomifaget, og klarte kun å fullt ut replikere 2 av over 70 studier, ofte på grunn av maglende data eller udokmuenterte dataprogrammer. Nyere forskning viser at problemet ikke er begrenset til klassiske statistiske metoder. <span class="citation" data-cites="kapoor2023">(<a href="#ref-kapoor2023" role="doc-biblioref">Kapoor &amp; Narayanan, 2023</a>)</span>p peker på at maskinlæringsbasert forskning har sine egne reproduserbarhetsutfordringer, blant annet gjennom det de kaller “data leakage”, der informasjon fra testdata utilsiktet lekker inn i treningsdata og gir kunstig gode resultater. Dette illustrerer at reproduserbarhetsproblemet også følger med når forskningsmetodene endrer seg. På samme måte diskuterer <span class="citation" data-cites="freese2022">(<a href="#ref-freese2022" role="doc-biblioref">Freese et al., 2022</a>)</span> hvordan samfunnsvitenskapen de siste årene har tatt i bruk nye praksiser som preregistrering og åpen datadeling for å møte “credibility crisis”-en, men understreker at utviklingen bygger videre på utfordringer som var kjent lenge før begrepet “replikasjonskrise” ble vanlig. Et konkret eksempel på hvor sårbar reproduserbarhet kan være for ytre faktorer, gis av <span class="citation" data-cites="schoch2024">(<a href="#ref-schoch2024" role="doc-biblioref">Schoch, 2024</a>)</span>, som viser til at deprekeringen av gratis akademisk API-tilgang hos Twitter/X i 2023 gjorde store mengder tidligere publisert forskning umulig å reprodusere i praksis, ettersom datagrunnlaget ikke lenger var tilgjengelig. Forfatterne foreslår et gradert system for reproduserbarhet, i stedet for en binær reproduserbar/ikke-reproduserbar-forståelse. Årsakene til manglende replikasjon handler imidlertid ikke bare om metode og tilgjengelighet, men også om insentiver. <span class="citation" data-cites="balafoutas2025">(<a href="#ref-balafoutas2025" role="doc-biblioref">Balafoutas et al., 2025</a>)</span> argumenterer for at akademias belønningssystemer, der publisering av nye, positive funn premieres langt sterkere enn replikasjonsstudier, er en vesentlig driver bak krisen på tvers av fagfelt som økonomi, finans og ledelse. Ikke alle er imidlertid enige i hvor stor krisen faktisk er:<span class="citation" data-cites="pethick2025">(<a href="#ref-pethick2025" role="doc-biblioref">Pethick et al., 2025</a>)</span> gjennomgår en britisk parlamentsrapport om temaet og konkluderer med at det per i dag mangler solid empirisk dokumentasjon for hvor omfattende reproduserbarhetsproblemet egentlig er, selv om tiltak likevel foreslås. Som en respons på disse funnene har flere foreslått at selve dokumentet som presenterer forskningen bør inneholde koden som genererer resultatene. Ideen om “literate programming”, opprinnelig tilskrevet Knuth, har utviklet seg gjennom verktøy som Sweave og Knitr <span class="citation" data-cites="xie2014">(<a href="#ref-xie2014" role="doc-biblioref">Xie, 2014</a>)</span> til det som i dag er R Markdown og Quarto <span class="citation" data-cites="gentleman2007">(<a href="#ref-gentleman2007" role="doc-biblioref">Gentleman &amp; Temple Lang, 2007</a>)</span>. <span class="citation" data-cites="gentleman2007">(<a href="#ref-gentleman2007" role="doc-biblioref">Gentleman &amp; Temple Lang, 2007</a>)</span> introduserer begrepet “compendium”, en samling av tekst, kode og data som til sammen utgjør et selvstendig, kjørbart dokument som andre kan gjenskape i detalj. Slike dynamiske dokumenter gjør det mulig å koble tekst og kode direkte sammen, slik at leseren i prinsippet kan kjøre analysen på nytt selv. Likevel er ikke alle enige om at “løsningen” fungerer i praksis.<span class="citation" data-cites="mccullough2008">(<a href="#ref-mccullough2008" role="doc-biblioref">McCullough et al., 2008</a>)</span>undersøkte dataarkivene til flere økonomitidsskrifter, og konkluderte med at arkivene i liten grad faktisk bidro til at publiserte resultater kunne reproduseres, blant annet fordi mange forfattere aldri leverte inn data. Dette illustrerer at tekniske løsninger alene ikke er nok - det kreves også insentiver og kultur for åpenhet <span class="citation" data-cites="nosek2015b">(<a href="#ref-nosek2015b" role="doc-biblioref"><strong>nosek2015b?</strong></a>)</span>. Diskusjon <strong>Burde replikerbarhet være et krav for publisering, eller er det å be om for mye?</strong> Argumentet for et krav er at reproduserbarhet er en nødvendig, om enn ikke tilstrekkelig, forutsetning for replikerbarhet <span class="citation" data-cites="peng2011">(<a href="#ref-peng2011" role="doc-biblioref">Peng, 2011</a>)</span>. Samtidig peker <span class="citation" data-cites="reprocrisis2025">(<a href="#ref-reprocrisis2025" role="doc-biblioref"><strong>reprocrisis2025?</strong></a>)</span> på at vi mangler solid empirisk dokumentasjon for hvor stort problemet egentlig er, noe som gjør det vanskeligere å begrunne strenge krav uten først å forstå omfanget bedre. Full replikasjon - ny datainnsamling og uavhengig etterprøving - er dessuten ofte kostbart og tidkrevende, og vanskelig å kreve av alle publiserte studier… ****Kan Quarto-dokumenter hjelpe med å oppnå reproduserbarhet?** Quarto bygger videre på Sweave, Knitr <span class="citation" data-cites="xie2014">(<a href="#ref-xie2014" role="doc-biblioref">Xie, 2014</a>)</span> og R Markdown, og støtter blant annet Zotero/BibTeX for referansehåndtering og eksport til flere formater. Dette gjør metodereproduserbarhet enklere å oppnå, men løser ikke nødvendigvis replikerbarhet eller generaliserbarhet, som avhenger av ny datainnsamling i andre kontekster <span class="citation" data-cites="goodman2016">(<a href="#ref-goodman2016" role="doc-biblioref">Goodman et al., 2016</a>)</span>. som <span class="citation" data-cites="schoch2024">(<a href="#ref-schoch2024" role="doc-biblioref">Schoch, 2024</a>)</span> viser, kan reproduserbarhet dessuten svekkes av forhold utenfor forfatterens kontroll, som endret datatilgang - noe et Quarto-dokument alene ikke kan løse. <strong>Hvilke problem gjenstår, og hvordan kan de løses?</strong> Selv med dynamiske dokumenter gjenstår utfordringer knyttet til pakkeversjoner og programvaremiljø over tid. Bruk av <code>renv</code> for å låse pakkeversjoner, og Docker for å sikre identisk kjøremiljø, er foreslåtte løsninger. I tillegg peker <span class="citation" data-cites="incentives2024">(<a href="#ref-incentives2024" role="doc-biblioref"><strong>incentives2024?</strong></a>)</span> på at tekniske løsninger må kombineres med endrede insentivstrukturer i akademia dersom kulturen for åpenhet skal endres varig, jf. erfaringene fra økonomifagets arkiver <span class="citation" data-cites="mccullough2008">(<a href="#ref-mccullough2008" role="doc-biblioref">McCullough et al., 2008</a>)</span>. Konklusjon Reproduserbarhet er en nødvendig, men ikke tilstrekkelig, forutsetning for robust og pålitelig vitenskap Verktøy som Quarto senker terskelen for metodereproduserbarhet betraktelig, men løser verken publiseringsbias <span class="citation" data-cites="young2008">(<a href="#ref-young2008" role="doc-biblioref">Young et al., 2008</a>)</span>, mangelen på insentiver for å faktisk dele data og kode åpent <span class="citation" data-cites="mccullough2008">(<a href="#ref-mccullough2008" role="doc-biblioref">McCullough et al., 2008</a>)</span>,m ellers nyere utfordinger knyttet til datatilgjengelighet.</p>
+<section id="introduksjon" class="level2">
+<h2 class="anchored" data-anchor-id="introduksjon">Introduksjon</h2>
+<p>Denne artikkelen tar for seg begrepet reproduserbarhet i vitenskapelig forskning, og hvorfor det har blitt et sentralt tema de siste tiårene. <span class="citation" data-cites="mcnutt2014">McNutt (<a href="#ref-mcnutt2014" role="doc-biblioref">2014</a>)</span> påpeker at vitenskap bygger på et fundament av tillit, og at gjenskaping av forsøk er en av de viktigste måtene forskere kan opparbeide seg tillit til egne konklusjoner. Samtidig har flere fagfelt, særlig psykologi, opplevd det som gjerne kalles en «replikasjonskrise» <span class="citation" data-cites="ioannidis2005 simmons2011">(<a href="#ref-ioannidis2005" role="doc-biblioref">Ioannidis, 2005</a>; <a href="#ref-simmons2011" role="doc-biblioref">Simmons et al., 2011</a>)</span>. Dette har satt spørsmålstegn ved hvor pålitelig publisert forskning egentlig er.</p>
+<p>Artikkelen diskuterer forskjellen mellom reproduserbarhet, replikerbarhet og generaliserbarhet, ser på årsaker til at forskningsresultater ofte ikke lar seg gjenskape. Den vurderer også om nyere verktøy som Quarto, <span class="citation" data-cites="Allaire_Quarto_2026">J. J. Allaire et al. (<a href="#ref-Allaire_Quarto_2026" role="doc-biblioref">2026</a>)</span>, dokumenter kan bidra til å løse noen av disse utfordringene.</p>
+<p>Temaet er viktig fordi robust og pålitelig forskning er selve grunnlaget for at vitenskapelig kunnskap kan bygges videre på <span class="citation" data-cites="jasny2011">(<a href="#ref-jasny2011" role="doc-biblioref">Jasny et al., 2011</a>)</span>.</p>
+</section>
+<section id="litterturgjennomgang" class="level2">
+<h2 class="anchored" data-anchor-id="litterturgjennomgang">Litterturgjennomgang</h2>
+<p>Reproduserbarhet regnes ofte som en nødvendig, men ikke tilstrekkelig, betingelse for replikerbarhet <span class="citation" data-cites="jasny2011">(<a href="#ref-jasny2011" role="doc-biblioref">Jasny et al., 2011</a>)</span>. Mens reproduserbarhet handler om å kunne gjenskape resultater med samme data og samme prosedyrer, krever replikerbarhet at man samler inn nye data og likevel finner samme konklusjon <span class="citation" data-cites="jasny2011">(<a href="#ref-jasny2011" role="doc-biblioref">Jasny et al., 2011</a>)</span>. <span class="citation" data-cites="goodman2016">Goodman et al. (<a href="#ref-goodman2016" role="doc-biblioref">2016</a>)</span> skiller videre mellom tre typer reproduserbarhet: metodereproduserbarhet, resultatreproduserbarhet og robusthet/generaliserbarhet, og understreker at disse begrepene ofte brukes om hverandre i litteraturen på en måte som skaper forvirring.</p>
+<p>En sentral årsak til manglende reproduserbarhet er publiseringsbias. Fordi tidsskrifter i stor grad foretrekker positive og signifikante funn, havner studier som ikke finne noen effekt sjelden i litteraturen - et fenomen <span class="citation" data-cites="rosenthal1979">Rosenthal (<a href="#ref-rosenthal1979" role="doc-biblioref">1979</a>)</span>] omtaler som «the file drawer problem». <span class="citation" data-cites="young2008">Young et al. (<a href="#ref-young2008" role="doc-biblioref">2008</a>)</span> argumenterer for at dette kan forstås som en økonomisk logikk: vitenskapelig informasjon behandles som en vare, der signifikante resultater har høyere «markedsverdi» enn nullresultater. Dette fenomenet forsterker skjevheten i hva som faktisk publiseres. Dette henger tett sammen med problemet med type 1-feil: med et signifikansnivå på 0,05 vil man i gjennomsnitt forkaste en sann nullhypotese i ett av tjue tilfeller. Når kun signifikante funn publiseres, kan store deler av den publiserte litteraturen i verste fall bestå av falske positive funn <span class="citation" data-cites="simmons2011">(<a href="#ref-simmons2011" role="doc-biblioref">Simmons et al., 2011</a>)</span>. <span class="citation" data-cites="ioannidis2005">Ioannidis (<a href="#ref-ioannidis2005" role="doc-biblioref">2005</a>)</span> går så langt som å hevde at de fleste publiserte forskningsfunn faktisk er falske.</p>
+<p>Flere store replikasjonsstudier har forsøkt å tallfeste omfanget av problemet. <span class="citation" data-cites="nosek2015">Nosek et al. (<a href="#ref-nosek2015" role="doc-biblioref">2015</a>)</span> (Open Science Collaboration) forsøkte å replikere 100 studier fra tre ledende psykologitidsskrifter, og fant at kun 36 prosent av replikasjonene ga signifikante resultater, mot 97 prosent i de originale studiene. Lignende resultater kom frem i <span class="citation" data-cites="klein2018">Klein et al. (<a href="#ref-klein2018" role="doc-biblioref">2018</a>)</span> (Many Labs 2-prosjektet), der bare 54 prosent av 28 replikerte funn viste en statistisk signifikant effekt i samme retning som originalstudien. Problemet er heller ikke nytt eller begrenset til psykologi: allerede i 1982 forsøkte <em>The Journal of Money, Credit and Banking</em>-prosjektet å etterprøve resultater i økonomifaget, og klarte kun å fullt ut replikere 2 av over 70 studier, ofte på grunn av manglende data eller udokumenterte dataprogrammer. Nyere forskning viser at problemet ikke er begrenset til klassiske statistiske metoder. <span class="citation" data-cites="kapoor2023">Kapoor &amp; Narayanan (<a href="#ref-kapoor2023" role="doc-biblioref">2023</a>)</span> peker på at maskinlæringsbasert forskning har sine egne reproduserbarhetsutfordringer, blant annet gjennom det de kaller «data leakage» der informasjon fra testdata utilsiktet lekker inn i treningsdata og gir kunstig gode resultater.</p>
+<p>Dette illustrerer at reproduserbarhetsproblemet også følger med når forskningsmetodene endrer seg. På samme måte diskuterer <span class="citation" data-cites="freese2022">Freese et al. (<a href="#ref-freese2022" role="doc-biblioref">2022</a>)</span> hvordan samfunnsvitenskapen de siste årene har tatt i bruk nye praksiser som preregistrering og åpen datadeling for å møte «the credibility crisis». De understreker imidlertid at utviklingen bygger videre på utfordringer som var kjent lenge før begrepet «replikasjonskrise» ble vanlig. Et konkret eksempel på hvor sårbar reproduserbarhet kan være for ytre faktorer, gis av <span class="citation" data-cites="schoch2024">Schoch (<a href="#ref-schoch2024" role="doc-biblioref">2024</a>)</span> som viser til at deprekeringen av gratis akademisk API-tilgang hos Twitter/X i 2023 gjorde store mengder tidligere publisert forskning umulig å reprodusere i praksis, ettersom datagrunnlaget ikke lenger var tilgjengelig.</p>
+<p>Forfatterne foreslår et gradert system for reproduserbarhet, i stedet for en binær reproduserbar/ikke reproduserbar forståelse. Årsakene til manglende replikasjon handler imidlertid ikke bare om metode og tilgjengelighet, men også om insentiver. <span class="citation" data-cites="balafoutas2025">Balafoutas et al. (<a href="#ref-balafoutas2025" role="doc-biblioref">2025</a>)</span> argumenterer for at akademias belønningssystemer, der publisering av nye, positive funn premieres langt sterkere enn replikasjonsstudier som er en vesentlig driver bak krisen på tvers av fagfelt som økonomi, finans og ledelse. Ikke alle er imidlertid enige i hvor stor krisen faktisk er: <span class="citation" data-cites="pethick2025">Pethick et al. (<a href="#ref-pethick2025" role="doc-biblioref">2025</a>)</span> gjennomgår en britisk parlamentsrapport om temaet og konkluderer med at det per i dag mangler solid empirisk dokumentasjon for hvor omfattende reproduserbarhetsproblemet egentlig er, selv om tiltak likevel foreslås. Som en respons på disse funnene har flere foreslått at selve dokumentet som presenterer forskningen bør inneholde koden som genererer resultatene. Ideen om <em>literate programming</em>, opprinnelig tilskrevet Knuth, har utviklet seg gjennom verktøy som Sweave, <span class="citation" data-cites="leisch2002">Leisch (<a href="#ref-leisch2002" role="doc-biblioref">2002</a>)</span>, og Knitr, <span class="citation" data-cites="xie2014">Xie (<a href="#ref-xie2014" role="doc-biblioref">2014</a>)</span>, til det som i dag er R Markdown og Quarto <span class="citation" data-cites="gentleman2007">(<a href="#ref-gentleman2007" role="doc-biblioref">Gentleman &amp; Temple Lang, 2007</a>)</span>. <span class="citation" data-cites="gentleman2007">Gentleman &amp; Temple Lang (<a href="#ref-gentleman2007" role="doc-biblioref">2007</a>)</span> introduserer begrepet <em>compendium</em> en samling av tekst, kode og data som til sammen utgjør et selvstendig, kjørbart dokument som andre kan gjenskape i detalj.</p>
+<p>Slike dynamiske dokumenter gjør det mulig å koble tekst og kode direkte sammen, slik at leseren i prinsippet kan kjøre analysen på nytt selv. Likevel er ikke alle enige om at «løsningen» fungerer i praksis. <span class="citation" data-cites="mccullough2008">McCullough et al. (<a href="#ref-mccullough2008" role="doc-biblioref">2008</a>)</span> undersøkte dataarkivene til flere økonomitidsskrifter, og konkluderte med at arkivene i liten grad faktisk bidro til at publiserte resultater kunne reproduseres, blant annet fordi mange forfattere aldri leverte inn data. Dette illustrerer at tekniske løsninger alene ikke er nok, dette kreves også insentiver og kultur for åpenhet <span class="citation" data-cites="nosek2015">(<a href="#ref-nosek2015" role="doc-biblioref">Nosek et al., 2015</a>)</span>.</p>
+</section>
+<section id="burde-replikerbarhet-være-et-krav-for-publisering-eller-er-det-å-be-om-for-mye" class="level2">
+<h2 class="anchored" data-anchor-id="burde-replikerbarhet-være-et-krav-for-publisering-eller-er-det-å-be-om-for-mye">Burde replikerbarhet være et krav for publisering, eller er det å be om for mye?</h2>
+<p>Argumentet for et krav er at reproduserbarhet er en nødvendig, om enn ikke tilstrekkelig, forutsetning for replikerbarhet <span class="citation" data-cites="peng2011">(<a href="#ref-peng2011" role="doc-biblioref">Peng, 2011</a>)</span>. Samtidig peker <span class="citation" data-cites="pethick2025">Pethick et al. (<a href="#ref-pethick2025" role="doc-biblioref">2025</a>)</span> på at vi mangler solid empirisk dokumentasjon for hvor stort problemet egentlig er, noe som gjør det vanskeligere å begrunne strenge krav uten først å forstå omfanget bedre. Full replikasjon, ny datainnsamling og uavhengig etterprøving, er dessuten ofte kostbart og tidkrevende, og trolig vanskelig å kreve av alle publiserte studier.</p>
+</section>
+<section id="kan-quarto-dokumenter-hjelpe-med-å-oppnå-reproduserbarhet" class="level2">
+<h2 class="anchored" data-anchor-id="kan-quarto-dokumenter-hjelpe-med-å-oppnå-reproduserbarhet">Kan Quarto-dokumenter hjelpe med å oppnå reproduserbarhet?</h2>
+<p>Quarto bygger videre på Sweave, Knitr og R Markdown, og støtter blant annet Zotero/BibTeX for referansehåndtering og eksport til flere formater. Dette gjør metodereproduserbarhet enklere å oppnå, men løser ikke nødvendigvis replikerbarhet eller generaliserbarhet. Dette er avhengig av ny datainnsamling i nye kontekster <span class="citation" data-cites="goodman2016">(<a href="#ref-goodman2016" role="doc-biblioref">Goodman et al., 2016</a>)</span>.</p>
+<p>Som <span class="citation" data-cites="schoch2024">Schoch (<a href="#ref-schoch2024" role="doc-biblioref">2024</a>)</span> viser, kan reproduserbarhet dessuten svekkes av forhold utenfor forfatterens kontroll, som endret datatilgang. Dette er noe et Quarto-dokument alene ikke kan løse.</p>
+</section>
+<section id="hvilke-problem-gjenstår-og-hvordan-kan-de-løses" class="level2">
+<h2 class="anchored" data-anchor-id="hvilke-problem-gjenstår-og-hvordan-kan-de-løses">Hvilke problem gjenstår, og hvordan kan de løses?</h2>
+<p>Selv med dynamiske dokumenter gjenstår utfordringer knyttet til pakkeversjoner og programvaremiljø over tid. Bruk av `renv`, <span class="citation" data-cites="wickham2026">Ushey &amp; Wickham (<a href="#ref-wickham2026" role="doc-biblioref">2026</a>)</span>, for å låse pakkeversjoner, og Docker, <span class="citation" data-cites="docker2026">Docker (<a href="#ref-docker2026" role="doc-biblioref">2021</a>)</span>, for å sikre identisk kjøremiljø, er foreslåtte løsninger. I tillegg peker <span class="citation" data-cites="balafoutas2025">Balafoutas et al. (<a href="#ref-balafoutas2025" role="doc-biblioref">2025</a>)</span>] på at tekniske løsninger må kombineres med endrede insentivstrukturer i akademia dersom kulturen for åpenhet skal endres varig, jf. erfaringene fra økonomifagets arkiver <span class="citation" data-cites="mccullough2008">(<a href="#ref-mccullough2008" role="doc-biblioref">McCullough et al., 2008</a>)</span>.</p>
+</section>
+<section id="konklusjon" class="level2">
+<h2 class="anchored" data-anchor-id="konklusjon">Konklusjon</h2>
+<p>Reproduserbarhet er en nødvendig, men ikke tilstrekkelig, forutsetning for robust og pålitelig vitenskap <span class="citation" data-cites="jasny2011">(<a href="#ref-jasny2011" role="doc-biblioref">Jasny et al., 2011</a>)</span>. Verktøy som Quarto senker terskelen for metodereproduserbarhet betraktelig, men løser verken publiseringsbias <span class="citation" data-cites="young2008">(<a href="#ref-young2008" role="doc-biblioref">Young et al., 2008</a>)</span>, mangelen på insentiver for å faktisk dele data og kode åpent <span class="citation" data-cites="mccullough2008">(<a href="#ref-mccullough2008" role="doc-biblioref">McCullough et al., 2008</a>)</span>, eller nyere utfordringer knyttet til datatilgjengelighet <span class="citation" data-cites="schoch2024">(<a href="#ref-schoch2024" role="doc-biblioref">Schoch, 2024</a>)</span>.</p>
+<p>Skal replikasjonskrisen møtes for alvor, kreves trolig en kombinasjon av bedre verktøy, endrede publiseringsnormer og en forskningskultur som verdsetter åpenhet like høyt som nye, positive funn.</p>
 </section>
 <section id="referanser" class="level2">
 <h2 class="anchored" data-anchor-id="referanser">Referanser</h2>
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list">
+<div id="ref-Allaire_Quarto_2026" class="csl-entry" role="listitem">
+Allaire, J. J., Teague, C., Scheidegger, C., Xie, Y., Dervieux, C., &amp; Woodhull, G. (2026). <em><span>Quarto</span></em> (Version 1.10). <a href="https://doi.org/10.5281/zenodo.5960048">https://doi.org/10.5281/zenodo.5960048</a>
+</div>
+<div id="ref-allaire_rmarkdown2026" class="csl-entry" role="listitem">
+Allaire, J., Xie, Y., Dervieux, C., McPherson, J., Luraschi, J., Ushey, K., Atkins, A., Wickham, H., Cheng, J., Chang, W., &amp; Iannone, R. (2026). <em>Rmarkdown: Dynamic documents for r</em>. <a href="https://github.com/rstudio/rmarkdown">https://github.com/rstudio/rmarkdown</a>
+</div>
 <div id="ref-balafoutas2025" class="csl-entry" role="listitem">
 Balafoutas, L., Celse, J., Karakostas, A., &amp; Umashev, N. (2025). Incentives and the replication crisis in social sciences: <span>A</span> critical review of open science practices. <em>Journal of Behavioral and Experimental Economics</em>, <em>114</em>, 102327. <a href="https://doi.org/10.1016/j.socec.2024.102327">https://doi.org/10.1016/j.socec.2024.102327</a>
+</div>
+<div id="ref-docker2026" class="csl-entry" role="listitem">
+Docker, Inc. (2021). <em>Docker: An open platform for developing, shipping, and running applications</em>. <a href="https://www.docker.com">https://www.docker.com</a>
 </div>
 <div id="ref-freese2022" class="csl-entry" role="listitem">
 Freese, J., Rauf, T., &amp; Voelkel, J. G. (2022). Advances in transparency and reproducibility in the social sciences. <em>Social Science Research</em>, <em>107</em>, 102770. <a href="https://doi.org/10.1016/j.ssresearch.2022.102770">https://doi.org/10.1016/j.ssresearch.2022.102770</a>
@@ -135,10 +171,16 @@ Jasny, B. R., Chin, G., Chong, L., &amp; Vignieri, S. (2011). Again, and <span>A
 Kapoor, S., &amp; Narayanan, A. (2023). Leakage and the reproducibility crisis in machine-learning-based science. <em>Patterns</em>, <em>4</em>(9), 100804. <a href="https://doi.org/10.1016/j.patter.2023.100804">https://doi.org/10.1016/j.patter.2023.100804</a>
 </div>
 <div id="ref-klein2018" class="csl-entry" role="listitem">
-<span class="nocase">Klein, R. A., Vianello, M., Hasselman, F., Adams, B. G., Reginald B. Adams, \relax. Jr., Alper, S., Aveyard, M., Axt, J. R., Babalola, M. T., Bahník, Š., Batra, R., Berkics, M., Bernstein, M. J., Berry, D. R., Bialobrzeska, O., Binan, E. D., Bocian, K., Brandt, M. J., Busching, R., … Nosek, B. A.</span> (2018). Many <span>Labs</span> 2: <span>Investigating Variation</span> in <span>Replicability</span> across <span>Samples</span> and <span>Settings</span>. <em>Advances in Methods and Practices in Psychological Science</em>, <em>1</em>(4), 443–490.
+Klein, R. A., Vianello, M., Hasselman, F., Adams, B. G., Reginald B. Adams, \relax. Jr., Alper, S., Aveyard, M., Axt, J. R., Babalola, M. T., Bahník, Š., Batra, R., Berkics, M., Bernstein, M. J., Berry, D. R., Bialobrzeska, O., Binan, E. D., Bocian, K., Brandt, M. J., Busching, R., … Nosek, B. A. (2018). Many <span>Labs</span> 2: <span>Investigating Variation</span> in <span>Replicability</span> across <span>Samples</span> and <span>Settings</span>. <em>Advances in Methods and Practices in Psychological Science</em>, <em>1</em>(4), 443–490.
+</div>
+<div id="ref-leisch2002" class="csl-entry" role="listitem">
+Leisch, F. (2002). Sweave: Dynamic generation of statistical reports using literate data analysis. In W. Härdle &amp; B. Rönz (Eds.), <em>Compstat</em> (pp. 575–580). Physica-Verlag HD.
 </div>
 <div id="ref-mccullough2008" class="csl-entry" role="listitem">
 McCullough, B. D., McGeary, K. A., &amp; Harrison, T. D. (2008). Do <span>Economics Journal Archives Promote Replicable Research</span>? <em>Canadian Journal of Economics/Revue Canadienne d’économique</em>, <em>41</em>(4), 1406–1420.
+</div>
+<div id="ref-mcnutt2014" class="csl-entry" role="listitem">
+McNutt, M. (2014). Reproducibility. <em>Science</em>, <em>343</em>(6168), 229–229.
 </div>
 <div id="ref-nosek2015" class="csl-entry" role="listitem">
 Nosek, B. A., Alter, G., Banks, G. C., Borsboom, D., Bowman, S. D., Breckler, S. J., Buck, S., Chambers, C. D., Chin, G., Christensen, G., Contestabile, M., Dafoe, A., Eich, E., Freese, J., Glennerster, R., Goroff, D., Green, D. P., Hesse, B., Humphreys, M., … Yarkoni, T. (2015). Promoting an <span>Open Research Culture</span>. <em>Science</em>, <em>348</em>(6242), 1422–1425.
@@ -149,6 +191,9 @@ Peng, R. D. (2011). Reproducible <span>Research</span> in <span>Computational Sc
 <div id="ref-pethick2025" class="csl-entry" role="listitem">
 Pethick, S., Wass, M. N., &amp; Michaelis, M. (2025). Is <span>There</span> a <span>Reproducibility Crisis</span>? <span>On</span> the <span>Need</span> for <span class="nocase">Evidence-based Approaches</span>. <em>International Studies in the Philosophy of Science</em>, <em>38</em>(4), 287–303. <a href="https://doi.org/10.1080/02698595.2025.2538937">https://doi.org/10.1080/02698595.2025.2538937</a>
 </div>
+<div id="ref-r_core2026" class="csl-entry" role="listitem">
+R Core Team. (2026). <em>R: A language and environment for statistical computing</em>. R Foundation for Statistical Computing. <a href="https://doi.org/10.32614/R.manuals">https://doi.org/10.32614/R.manuals</a>
+</div>
 <div id="ref-rosenthal1979" class="csl-entry" role="listitem">
 Rosenthal, R. (1979). <em>The <span>File Drawer Problem</span> and <span>Tolerance</span> for <span>Null Results</span>.</em>
 </div>
@@ -158,8 +203,23 @@ Schoch, D. (2024). <em>Computational reproducibility in computational social sci
 <div id="ref-simmons2011" class="csl-entry" role="listitem">
 Simmons, J. P., Nelson, L. D., &amp; Simonsohn, U. (2011). False-<span>Positive Psychology</span>: <span>Undisclosed Flexibility</span> in <span>Data Collection</span> and <span>Analysis Allows Presenting Anything</span> as <span>Significant</span>. <em>Psychological Science</em>, <em>22</em>(11), 1359–1366.
 </div>
+<div id="ref-wickham2026" class="csl-entry" role="listitem">
+Ushey, K., &amp; Wickham, H. (2026). <em>Renv: Project environments</em>. <a href="https://doi.org/10.32614/CRAN.package.renv">https://doi.org/10.32614/CRAN.package.renv</a>
+</div>
 <div id="ref-xie2014" class="csl-entry" role="listitem">
-Xie, Y. (2014). Knitr: <span>A Comprehensive Tool</span> for <span>Reproducible Research</span> in <span>R</span>. In V. Stodden, F. Leisch, &amp; R. D. Peng (Eds.), <em>Implementing <span>Reproducible Computational Research</span></em>. <span>Chapman and Hall/CRC</span>.
+Xie, Y. (2014). Knitr: A comprehensive tool for reproducible research in <span>R</span>. In V. Stodden, F. Leisch, &amp; R. D. Peng (Eds.), <em>Implementing reproducible computational research</em>. Chapman; Hall/CRC.
+</div>
+<div id="ref-xie2015" class="csl-entry" role="listitem">
+Xie, Y. (2015). <em>Dynamic documents with <span>R</span> and knitr</em> (2nd ed.). Chapman; Hall/CRC. <a href="https://yihui.org/knitr/">https://yihui.org/knitr/</a>
+</div>
+<div id="ref-xie2025" class="csl-entry" role="listitem">
+Xie, Y. (2025). <em>Knitr: A general-purpose package for dynamic report generation in <span>R</span></em>. <a href="https://yihui.org/knitr/">https://yihui.org/knitr/</a>
+</div>
+<div id="ref-xie2018" class="csl-entry" role="listitem">
+Xie, Y., Allaire, J. J., &amp; Grolemund, G. (2018). <em>R markdown: The definitive guide</em>. Chapman; Hall/CRC. <a href="https://yihui.org/rmarkdown/">https://yihui.org/rmarkdown/</a>
+</div>
+<div id="ref-xie2020" class="csl-entry" role="listitem">
+Xie, Y., Dervieux, C., &amp; Riederer, E. (2020). <em>R markdown cookbook</em>. Chapman; Hall/CRC. <a href="https://yihui.org/rmarkdown-cookbook">https://yihui.org/rmarkdown-cookbook</a>
 </div>
 <div id="ref-young2008" class="csl-entry" role="listitem">
 Young, N. S., Ioannidis, J. P. A., &amp; Al-Ubaydli, O. (2008). Why <span>Current Publication Practices May Distort Science</span>. <em>PLoS Medicine</em>, <em>5</em>(10), e201.
@@ -168,17 +228,44 @@ Young, N. S., Ioannidis, J. P. A., &amp; Al-Ubaydli, O. (2008). Why <span>Curren
 </section>
 <section id="appendiks-a" class="level2">
 <h2 class="anchored" data-anchor-id="appendiks-a">Appendiks A</h2>
-<ul>
-<li>Versjon nummer og referanse til R pakken brukt i dokumentet</li>
-<li>R versjon brukt, med referanse</li>
-</ul>
+<p>Denne rapporten ble utarbeidet i R, <span class="citation" data-cites="r_core2026">R Core Team (<a href="#ref-r_core2026" role="doc-biblioref">2026</a>)</span>, og Quarto, <span class="citation" data-cites="Allaire_Quarto_2026">J. J. Allaire et al. (<a href="#ref-Allaire_Quarto_2026" role="doc-biblioref">2026</a>)</span>, ved bruk av følgende R-pakker: knitr <span class="citation" data-cites="xie2014 xie2015 xie2025">(<a href="#ref-xie2014" role="doc-biblioref">Xie, 2014</a>, <a href="#ref-xie2015" role="doc-biblioref">2015</a>, <a href="#ref-xie2025" role="doc-biblioref">2025</a>)</span> og rmarkdown <span class="citation" data-cites="allaire_rmarkdown2026 xie2018 xie2020">(<a href="#ref-allaire_rmarkdown2026" role="doc-biblioref">J. Allaire et al., 2026</a>; <a href="#ref-xie2018" role="doc-biblioref">Xie et al., 2018</a>, <a href="#ref-xie2020" role="doc-biblioref">2020</a>)</span>.</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>R version 4.6.1 (2026-06-24)
+Platform: aarch64-apple-darwin23
+Running under: macOS Tahoe 26.6.2
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.6/Resources/lib/libRblas.0.dylib 
+LAPACK: /Library/Frameworks/R.framework/Versions/4.6/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.1
+
+locale:
+[1] nb_NO.UTF-8/nb_NO.UTF-8/nb_NO.UTF-8/C/nb_NO.UTF-8/en_US.UTF-8
+
+time zone: Europe/Oslo
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+ [1] htmlwidgets_1.6.4 compiler_4.6.1    fastmap_1.2.0     cli_3.6.6        
+ [5] tools_4.6.1       htmltools_0.5.9   otel_0.2.0        rstudioapi_0.19.0
+ [9] yaml_2.3.12       rmarkdown_2.31    knitr_1.51        jsonlite_2.0.0   
+[13] xfun_0.60         digest_0.6.39     rlang_1.3.0       evaluate_1.0.5   </code></pre>
+</div>
+</div>
 </section>
 <section id="appendiks-b" class="level2">
 <h2 class="anchored" data-anchor-id="appendiks-b">Appendiks B</h2>
+<p>I arbeidet med denne oppgaven har jeg brukt Chatgpt.com , som støtte i skriveprosessen min for å vudere teksten min om oppgaven jeg har fptt. KI-verktøyet er brukt til:</p>
 <ul>
-<li>Hvordan er KI brukt</li>
-<li>Husk invitasjon til chat</li>
+<li>Har spurt om teksten min</li>
+<li>Har spurt om mine kilder</li>
 </ul>
+<p>Alle forslag fra KI-verktøyet er gjennomgått, tilpasset og kvalitetssikret av meg selv før de ble tatt inn i den endelige teksten.</p>
+<p>Her her linken: ( brukte ganske lite av den, lærte det meste fra læreren og powerpointene)</p>
+<p><a href="https://chatgpt.com/share/6aa81999-4a8c-83eb-a336-e3448dd74e7c" class="uri">https://chatgpt.com/share/6aa81999-4a8c-83eb-a336-e3448dd74e7c</a></p>
 </section>
 
 </main>
